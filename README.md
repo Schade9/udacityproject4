@@ -48,3 +48,16 @@ source .devops/bin/activate
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Included files
+ - `.circleci/config.yml`: has the configurations for CircleCI
+ - `output_txt_files/docker_out.txt`: has the run_docker.sh script output
+ - `output_txt_files/kubernetes_out.txt`: has the run_kubernetes.sh script output
+ - `app.py`: the python web app lauced to make predictions
+ - `Dockerfile`: the docker image configuration file
+ - `make_prediction.sh`: the script that makes a sample prediction for tests
+ - `Makefile`: is the file for installing dependencies and linting the project
+ - `requirements.txt`: includes the application dependencies
+ - `run_docker.sh`: script used to build the tag and run the docker container
+ - `run_kubernetes.sh`: the script used to pull the image and run kubernetes pod for the application
+ - `upload_docker.sh`: the script used to upload the docker image to docker hub
